@@ -156,10 +156,17 @@ $(document).ready(function () {
       })
     })
     .fail(function (response) {
-      let prueba =  `<div class="box-notfound"><p>El administrador de esta tienda no ha
-      agregado ningún producto a su catálogo.</p></div>
-      <br>
-      `
+      let prueba = `<h4>No encontramos coincidencias <span>con tu búsqueda</span></h4>
+      <div class="text-muted">0 resultados para "<b>${param1}</b>"
+        <br>
+              <div class="btn_opciones">
+                <a href="/"> 
+                  <button type="button" class=" btn btn-dark">
+                    Volver a Inicio
+                  </button>
+                </a>
+              </div>
+      </div>`
       if (response.responseJSON.sRpta == 'no se encontro categoria') {
         prueba = `<div class="box-notfound"><p>El administrador de esta tienda no ha
         agregado ningún producto a su catálogo.</p></div>
