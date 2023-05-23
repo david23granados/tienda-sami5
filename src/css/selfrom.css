@@ -28,6 +28,9 @@ letter-spacing: 0em;
 text-align: center;
 
 }
+.modal-header{
+padding: 26px !important;
+}
 a.link_what {
   bottom: 175px;
 }
@@ -622,7 +625,7 @@ header .info p{
   margin-bottom: 5px;
 }
 .modal-body .sm-contenedor-interno{
-  align-items: flex-start;
+ /*  align-items: flex-start; */
 }
 #product-image-modal {
   width: 100%;
