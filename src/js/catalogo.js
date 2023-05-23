@@ -168,15 +168,9 @@ $(document).ready(function () {
               </div>
       </div>`
       if (response.responseJSON.sRpta == 'no se encontro categoria') {
-        prueba = `<h4>No encontramos ningun producto</h4>
+        prueba = `<div class="box-notfound"><p>El administrador de esta tienda no ha
+        agregado ningún producto a su catálogo.</p></div>
         <br>
-              <div class="btn_opciones">
-                <a href="http://samishop5.s1a2m3i4.com/login/?redirect=home#!/auth-login/"> 
-                  <button type="button" class=" btn btn-dark">
-                    Volver a Inicio
-                  </button>
-                </a>
-              </div>
         `
       }
 

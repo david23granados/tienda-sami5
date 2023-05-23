@@ -111,6 +111,11 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+.box-notfound{
+  min-height: 22vh;
+  display: grid;
+  place-items: center;
+}
 
 /*CONTROLS add cart*/
 .input-spinner {
