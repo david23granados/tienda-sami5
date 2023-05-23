@@ -19,7 +19,9 @@
   color: #fff;
   font-style: normal;
 }
-
+a.link_what {
+  bottom: 175px;
+}
 .text_mn b,
 .saleform_options .saleform_product_form .text_mn2 b {
   display: unset;
