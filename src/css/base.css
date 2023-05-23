@@ -11,13 +11,9 @@ html {
 }
 
 
-  body { 
-    
-  
-overflow: hidden; 
-overflow-y: auto;
-
-}
+html, body {
+  overflow-x:hidden 
+} 
 
 body {
   font-family: 'Poppins', sans-serif;
