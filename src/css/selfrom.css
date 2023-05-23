@@ -606,7 +606,7 @@ header .info p{
 .info-frame{
   padding-top: 25px;
 }
-.footer .info{
+footer .info{
   display: none !important;
 }
 .seguir, .pagar {
@@ -674,7 +674,7 @@ header .info p{
     width: 55% !important;
   }
 }
-.descripcion_title{
+#descripcion_title{
   margin-bottom: 20px;
 }
 .des_text{
