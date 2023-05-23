@@ -10,7 +10,7 @@ html {
   color: #495057;
 }
 
-@media (max-width: 425px) {  
+@media (max-width: 450px) {  
   html { 
 
     overflow-y: auto; 
