@@ -52,9 +52,8 @@ form.form-buscador {
     position: relative;
 }
 form.form-buscador:focus-within {
-    bottom: -37px;
-    right: 25px;
-    left: 25px;
+    right: 74px;
+    left: 156px;
     position: absolute;
 }
 input.buscador-input {
@@ -73,8 +72,9 @@ input.buscador-input {
 form.form-buscador:focus-within input.buscador-input {
     width: 100%;
     color: black;
-    background: #e1e1e1;
+    background: transparent;
     padding-right: 10vw;
+    border: 1px solid #c3bcbc;
 }
 button.boton-buscador {
     border-radius: 8px;
@@ -84,8 +84,9 @@ button.boton-buscador {
 }
 form.form-buscador:focus-within input.buscador-input + button {
     position: relative;
-    right: -90%;
-    background: #e1e1e1;
+    right: -78%;
+    bottom: -3px;
+    background: transparent;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
