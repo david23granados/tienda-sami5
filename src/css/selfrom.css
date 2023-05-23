@@ -653,3 +653,9 @@ header .info p{
   font-weight: 600;
   color: inherit;
 }
+
+@media(max-width:500px){
+  .seguir.sm-col-30 {
+    width: 55% !important;
+  }
+}
