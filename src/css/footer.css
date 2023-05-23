@@ -26,6 +26,7 @@ footer .info .logo h2{
     letter-spacing: 18px;
     font-weight: 500;
     font-size: 20px;
+    text-transform: uppercase;
 }
 footer .info .contacto h3, footer .info .siguenos h3{
     margin: 30px 0;
@@ -39,7 +40,7 @@ footer .info .contacto ul li{
 footer .info .siguenos ul{
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 footer .link-sami{
     background-color: #A9B546;
