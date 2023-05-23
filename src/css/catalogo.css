@@ -107,9 +107,15 @@
 
 .bg-icon-emoji{
   min-height: 22vh;
-    background: url('../images/iconos/emojisad.png');
+    background: url(../images/iconos/emojisad.png);
     background-position: center;
     background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+    flex-direction: column;
+    font-size: 15px;
 }
 .box-notfound{
   min-height: 22vh;
