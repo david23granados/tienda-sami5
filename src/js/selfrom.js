@@ -17,6 +17,7 @@ $(document).ready(function () {
   $('.facebook').attr('href', `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href)}`)
   $('.tiktok').attr('href', `whatsapp://send?text=${encodeURIComponent(location.href)}`)
   console.log(resultServer) //producto
+  var info_cat = resultServer['obj']['datos_Catalogo'][0]
  if (descrip_catalogo == "") {
     $("#descripcion_title").css("display" , "none")
   
