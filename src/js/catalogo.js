@@ -82,7 +82,7 @@ $(document).ready(function () {
           let oferta = producto.precio_oferta_maxima * 100
           oferta = oferta / producto.precio_venta_maxima
           oferta = 100 - oferta
-          precios = `<del class="price-old">${MODENA_PRINCIPAL} ${producto.precio_venta_maxima}</del><span class="price_offer">Ahora ${MODENA_PRINCIPAL} ${producto.precio_oferta_maxima}</span>`
+          precios = `<del class="price-old">${MODENA_PRINCIPAL} ${producto.precio_venta_maxima}</del><span class="price_offer">${MODENA_PRINCIPAL} ${producto.precio_oferta_maxima}</span>`
           porcentaje = `<span class="badge badge-danger">-${parseInt(oferta)}%</span>`
         }
         $('.conten-card').append(
@@ -398,7 +398,7 @@ $(document).ready(function () {
           } else {
             const prm = (obm.sale_price / obm.price) * 100 - 100
             pricehd = `<div><del class="price-old">${MODENA_PRINCIPAL} ${parseFloat(obm.price).toFixed(2)}</del></div>
-          <div><span class="price">Ahora ${MODENA_PRINCIPAL} ${parseFloat(obm.sale_price).toFixed(2)}</span></div>
+          <div><span class="price">${MODENA_PRINCIPAL} ${parseFloat(obm.sale_price).toFixed(2)}</span></div>
           <span class="badge badge-danger">-${parseInt(prm)}%</span>`
           }
 
