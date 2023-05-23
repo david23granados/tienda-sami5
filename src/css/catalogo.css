@@ -47,7 +47,7 @@
 
 .card-product-grid .img-wrap img {
   cursor: pointer;
-  height: 176px;
+  height: 150px;
   object-fit: contain;
 }
 

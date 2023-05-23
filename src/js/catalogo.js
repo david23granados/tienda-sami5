@@ -4,10 +4,10 @@ const ESQUELETO_PRODUCTO = `
     <div class="img-wrap">
       [[porcentaje]]
       [[tag_nuevo]]
-      <a href="/[[url_producto]]" aria-label="Ver detalle del producto">
+      <a href="/[[url_producto]]" aria-label="Ver detalle del producto"> 
         <img src="[[imagen_principal]]" class="sm-responsive-img" alt="[[titulo_producto]]" width="166" height="176">
       </a>
-      <a class="btn btn-block btn-primary btn_subt" name="[[sku]]" data-idprd="[[id_producto]]">VISTA PREVIA</a>
+     <a class="btn btn-block btn-primary btn_subt" name="[[sku]]" data-idprd="[[id_producto]]">VISTA PREVIA</a>
     </div>
     <figcaption class="info-wrap">
       <div class="fix-height">
