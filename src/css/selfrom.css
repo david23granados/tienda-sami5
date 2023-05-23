@@ -19,6 +19,15 @@
   color: #fff;
   font-style: normal;
 }
+.modal-title{
+  font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: center;
+
+}
 a.link_what {
   bottom: 175px;
 }
