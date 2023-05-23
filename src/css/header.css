@@ -7,31 +7,39 @@ header .group-img .banner img{
 }
 header .group-img .logo{
     position: absolute;
-    bottom: -50px;
-    left: 30px;
-    width: 123px;
-    height: 123px;
+    bottom: -15px;
+    left: 16px;
+    width: 119px;
+    height: 119px;
 }
 .group-icon {
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
-    margin-top: 10px;
+    gap: 20px;
+    margin-top: -5px;
     position: relative;
     left: 0;
     right: 0;
+    bottom: 15px;
 }
 .group-icon .carrito {
     margin-right: 30px;
 }
 header .info {
-    padding: 30px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+header .info h1 {
+    font-size: 30px
+}
+header .info div {
+    font-size: 13px;
 }
 .logo.logo-p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 75px;
+    font-size: 70px;
     background-color: #CED69A;
     border: 5px solid white;
     border-radius: 10px;
