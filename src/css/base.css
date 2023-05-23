@@ -10,6 +10,14 @@ html {
   color: #495057;
 }
 
+
+  body { 
+
+  
+overflow-x: hidden; 
+
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0px;

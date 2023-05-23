@@ -47,7 +47,7 @@
 
 .card-product-grid .img-wrap img {
   cursor: pointer;
-  height: 176px;
+  height: 150px;
   object-fit: contain;
 }
 
@@ -538,7 +538,7 @@ button:focus {
   right: 0;
   display: flex;
   justify-content: center;
-  font-size: 15px;
+  font-size: 14px;
 }
 .img-wrap .badge {
   position: absolute;
