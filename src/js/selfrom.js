@@ -18,11 +18,11 @@ $(document).ready(function () {
   $('.tiktok').attr('href', `whatsapp://send?text=${encodeURIComponent(location.href)}`)
   console.log(resultServer) //producto
   
- if (resultServer.obj.datos_Catalogo[0].descrip_catalogo == "") {
+ if (resultServer.obj.datos_Catalogo[0].descrip_catalogo == "<p></p>") {
     $("#descripcion_title").css("display" , "none")
   
  }
- if (resultServer.obj.datos_Catalogo[0].descrip_corta == "") {
+ if (resultServer.obj.datos_Catalogo[0].descrip_corta == "<p></p>") {
   $("#descripcion_title").css("display" , "none")
 
 }
