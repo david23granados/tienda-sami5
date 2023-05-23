@@ -10,6 +10,14 @@ html {
   color: #495057;
 }
 
+@media (max-width: 425px) {  
+  html { 
+
+    overflow-y: auto; 
+overflow-x: hidden; 
+} 
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0px;
