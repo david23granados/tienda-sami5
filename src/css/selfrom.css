@@ -674,3 +674,14 @@ header .info p{
     width: 55% !important;
   }
 }
+.descripcion_title{
+  margin-bottom: 20px;
+}
+.des_text{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  
+}
