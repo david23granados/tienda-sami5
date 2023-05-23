@@ -277,7 +277,7 @@ text-align: center;
 #paginacion-cat ul li a {
   box-shadow: none;
   background: white;
-  padding: 6px 12px;
+  padding: 9px 17px;
   border: 1px solid #ddd;
   border-radius: 0px;
   color: black;
@@ -289,7 +289,7 @@ text-align: center;
   margin-top: 5px;
   box-shadow: none;
   background: #666;
-  padding: 7px 12px;
+  padding: 9px 17px;
   border: 1px solid #ddd;
   border-radius: 0px;
   color: white;
@@ -572,4 +572,12 @@ button:focus {
   border-radius: 8px;
   color: white;
   font-weight: 700;
+}
+span.current.prev {
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+}
+a.page-link.next {
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
 }
