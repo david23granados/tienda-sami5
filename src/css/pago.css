@@ -9,6 +9,13 @@ main article{
     position: relative;
     margin-bottom: 25px;
 }
+article.coordinar {
+    margin-bottom: 12px !important;
+}
+
+article.pago {
+    margin-bottom: 12px !important;
+}
 main article > label{
     display: flex;
 }
