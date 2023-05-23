@@ -31,6 +31,9 @@ text-align: center;
 .modal-header{
 padding: 26px !important;
 }
+.modal-footer{
+border-top:0px !important;
+}
 a.link_what {
   bottom: 175px;
 }
@@ -609,7 +612,7 @@ header .info p{
   font-size: 15px;
 }
 #nombre_producto {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 19px;
   display: block;
   margin: 0 0 10px;
@@ -625,7 +628,10 @@ header .info p{
   margin-bottom: 5px;
 }
 .modal-body .sm-contenedor-interno{
- /*  align-items: flex-start; */
+  align-items: flex-start;
+}
+.info-box{
+  line-height: 25px;
 }
 #product-image-modal {
   width: 100%;
