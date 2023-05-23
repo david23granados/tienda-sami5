@@ -157,8 +157,7 @@ $(document).ready(function () {
     })
     .fail(function (response) {
       let prueba = `<h4>No encontramos coincidencias <span>con tu búsqueda</span></h4>
-      <div class="text-muted">0 resultados para "
-        <b>${param1}</b>"
+      <div class="text-muted">0 resultados para "<b>${param1}</b>"
         <br>
               <div class="btn_opciones">
                 <a href="/"> 
@@ -185,7 +184,7 @@ $(document).ready(function () {
       $('.section-pagetop').html(`
         <div class="container error_section">
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center bg-icon-emoji">
               ${prueba}
             </div>
           </div>

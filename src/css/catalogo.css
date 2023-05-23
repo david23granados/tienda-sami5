@@ -105,6 +105,13 @@
   transition: transform 0.4s ease;
 }
 
+.bg-icon-emoji{
+  min-height: 22vh;
+    background: url('../images/iconos/emojisad.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*CONTROLS add cart*/
 .input-spinner {
   padding: 6px;
