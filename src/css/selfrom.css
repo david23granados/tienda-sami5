@@ -603,6 +603,9 @@ header .info p{
   border-radius: 10px;
   cursor: pointer;
 }
+.info-frame{
+  padding-top: 25px;
+}
 .seguir, .pagar {
   padding: 15px 24px;
   background-color: transparent;
