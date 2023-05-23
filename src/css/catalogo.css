@@ -448,6 +448,9 @@ button:focus {
   padding-top: 10px;
   margin-top: 5px;
 }
+.price-old {
+  color: #ccc;
+}
 
 .img_prdh_pe img {
   padding: 5px;
@@ -489,7 +492,7 @@ button:focus {
   margin: 0 10px 10px;
 }
 #vista_productos b {
-  font-weight: 550;
+  font-weight: 600;
   color: #495057;
   text-transform: uppercase;
   font-size: 14px;
@@ -498,7 +501,7 @@ button:focus {
   display: flex;
 }
 .ordenar b {
-  font-weight: 550;
+  font-weight: 600;
   color: #495057;
   font-size: 13px;
 }
