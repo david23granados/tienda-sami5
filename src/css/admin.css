@@ -1,0 +1,20 @@
+.sm-header{
+
+background-color:#E3E8C9;
+height: 200px;
+}
+.sm-logo-tienda{
+
+	position: absolute;
+bottom: 0px;
+}
+
+.sm-info-cliente {
+  position: absolute;
+ bottom: 15px;
+}
+
+.sm-info-cliente .sm-bienvenida-txt{
+font-size: 20px;
+
+}

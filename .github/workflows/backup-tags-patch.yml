@@ -1,0 +1,49 @@
+# name: Backup Samishop Version in S3 Bucket
+
+# on:
+#   push:
+#     branches:
+#       - "tags"
+#       - "tags-patch"
+
+# jobs:
+#   build:
+#     runs-on: "ubuntu-latest"
+#     env:
+#       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#     strategy:
+#       matrix:
+#         node-version: [16.x]
+
+#     steps:
+#       - name: Checking out project
+#         uses: actions/checkout@v3
+
+#       - id: release
+#         name: Generate release
+#         uses: rymndhng/release-on-push-action@master
+#         with:
+#           bump_version_scheme: patch
+#           tag_prefix: v
+
+#       - name: Download compile zip
+#         uses: robinraju/release-downloader@v1.7
+#         with:
+#           latest: true
+#           fileName: "${{ steps.release.outputs.version }}.zip"
+#           tarBall: true
+#           zipBall: true
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           out-file-path: "backup"
+
+#       - name: Backup project to S3
+#         uses: zdurham/s3-upload-github-action@master
+#         with:
+#           args: --acl public-read
+#         env:
+#           FILE: backup/*.zip
+#           AWS_REGION: ${{ secrets.AWS_REGION }}
+#           S3_BUCKET: ${{ secrets.AWS_S3_BACKUP }}
+#           S3_KEY: ${{ secrets.S3_KEY }}
+#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

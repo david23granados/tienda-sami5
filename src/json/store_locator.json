@@ -1,0 +1,26 @@
+{
+  "bEstado": true,
+  "iCodigo": 0,
+  "sRpta": "consultado correctamente.",
+  "obj": {
+    "mod_estado": "activo",
+    "mod_estilo": "estilo_modulo_rt_2",
+    "mod_vstoreclose": "si",
+    "info": [
+      {
+        "id_tienda": 1,
+        "nombre_tienda": "SICUREZZA S.A.C.",
+        "direccion_tienda": "AV. IQUITOS 1514",
+        "departamento": "LIMA",
+        "provincia": "LIMA",
+        "distrito": "LIMA",
+        "telefono": "123456789",
+        "horario": "8 A.M. HASTA 6 P.M.",
+        "ubigeo": "05114",
+        "mensaje_adicional": "RECOGO EN TIENDA DE SICUREZZA",
+        "estado_tienda": "abierto",
+        "referencia_tienda": "piso 3"
+      }
+    ]
+  }
+}

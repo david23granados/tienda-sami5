@@ -1,0 +1,19 @@
+.sm-header{
+height: 100px;
+padding: 10px;
+}
+
+.sm-warp-logo {
+width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+

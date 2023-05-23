@@ -1,0 +1,144 @@
+<!-- plugin: slickslider -->
+<link href="[[URL_CDN_STORAGE]]/plugins/slickslider/slick.css" rel="stylesheet" type="text/css" />
+<link href="[[URL_CDN_STORAGE]]/plugins/slickslider/slick-theme.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="[[URL_CDN_STORAGE]]/css/selfrom.css?v=[[VERSION_URL]]" />
+<section class="contenido_producto">
+  <div class="volver"><a href="/">‹ Volver al Inicio </a></div>
+  <div class="">
+    <aside class="">
+      <article class="gallery-wrap">
+        <div class="img-big-wrap img-thumbnail">
+          <div data-fslightbox="mygalley" data-type="image" id="product-principal-item-thumb">
+            <img height="560" src="[[PRODUCT_PRINCIPAL_IMAGE]]" id="product-principal-image" alt="[[PRODUCT_TITLE]]" />
+          </div>
+        </div>
+        <div class="thumbs-wrap" id="product-thumbs-wrap">
+          <!-- <a data-fslightbox="mygalley" data-type="image" class="item-thumb" id="product-item-thumb" name="[[PRODUCT_COUNT]]" ><img src="[[PRODUCT_IMAGE]]" id="product-image" name="[[PRODUCT_COUNT]]"></a> -->
+        </div>
+      </article>
+    </aside>
+    <main class="">
+      <h2 class="title text-dark">[[PRODUCT_TITLE]]</h2>
+      <div class="" id="precio_prod"></div>
+
+      <div class="compartir">
+        <div class="sm-contenedor-interno">
+          <div class="sm-col-60 sm-contenedor-interno compartir-arriba">
+            <span>Comparte con tus amigos</span>
+            <img src="[[URL_CDN_STORAGE]]/images/iconos/SHARE.svg.png" alt="icono compartir" />
+          </div>
+          <div class="sm-col-60 sm-contenedor-interno compartir-abajo">
+            <a class="facebook" href="#" target="_blank" rel="noopener noreferrer"
+              ><img src="[[URL_CDN_STORAGE]]/images/iconos/facebook-black.svg" alt="facebook"
+            /></a>
+            <a class="tiktok" href="#" target="_blank" rel="noopener noreferrer"
+              ><img src="[[URL_CDN_STORAGE]]/images/iconos/WHATSAPP.svg" height="26" width="27" alt="tiktok"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="product-variation-section" class="col-md-12 d-none ">
+        <div class="col-md-12 col-12 mb-2 product-variation" id="product-variation" name="[[PRODUCT_VARIATION_COUNT]]">
+          <label class="form-label" id="product-variation-name" name="[[PRODUCT_VARIATION_COUNT]]">[[PRODUCT_VARIATION_NAME]]</label>
+          <select class="form-select product-variation-items" id="product-variation-items" name="[[PRODUCT_VARIATION_COUNT]]">
+            <option id="product-variation-item" class="product-variation-item" value="[[PRODUCT_VARIATION_VALUE]]" name="[[PRODUCT_VARIATION_COUNT]]">   [[PRODUCT_VARIATION_VALUE]] </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="" id="tp_envio"></div>
+      <div class="descripcion">
+        <p>[[PRODUCT_DESCRIPTION]]</p>
+      </div>
+      <div class="sm-contenedor-interno">
+        <div class="sm-col-30">
+          <div class="input-spinner">
+            <button type="button" id="button-minus" name="[[PRODUCT_SKU]]" aria-label="restar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24">
+                <path d="M19 13H5v-2h14v2z"></path>
+              </svg>
+            </button>
+            <input class="form-control text-center" placeholder="" value="1" id="product_quantity" name="[[PRODUCT_SKU]]" aria-label="Cantidad de producto"/>
+            <button type="button" id="button-plus" name="[[PRODUCT_SKU]]" aria-label="Sumar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#999" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="sm-col-30">
+          <button type="button" id="product-add-cart" name="[[PRODUCT_SKU]]">Agregar al carrito</button>
+        </div>
+        <p id="product_message" name="[[PRODUCT_SKU]]" class="sm-col-60"></p>
+      </div>
+
+      <div class="">
+        <span id="product-cart-message" class="text-red"> </span>
+      </div>
+    </main>
+  </div>
+</section>
+
+<section class="">
+  <div class="">
+    <div id="accordionDetalles"></div>
+  </div>
+</section>
+
+<div class="modal fade" id="staticBackdrop">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="staticBackdropLabel">HA SIDO AGREGADO A TU CARRO</h5>
+      </div>
+      <div class="modal-body">
+        <div class="sm-contenedor-interno">
+          <div class="sm-col-20">
+            <img id="product-image-modal" src="" width="80" height="80" class="img-responsive" alt="" />
+          </div>
+          <div class="sm-col-40">
+            <strong id="spnSummItemDet" id="product-title-modal"></strong>
+            <p>
+              <span id="nombre_producto"></span>
+            </p>
+            <div id="sku_prd">
+              <span>SKU:</span>
+              <i id="product-sku-modal"></i>
+            </div>
+            <div class="cant_shpcart">
+              <span>Cantidad:</span>
+              <span id="product-quantity-modal"></span>
+            </div>
+            <div class="">
+              <span id="product-modal-variation-title-1"></span>
+              <span id="product-modal-variation-value-1"></span>
+            </div>
+            <div class="">
+              <span id="product-modal-variation-title-2"></span>
+              <span id="product-modal-variation-value-2"></span>
+            </div>
+            <div class="">
+              <span id="product-modal-variation-title-3"></span>
+              <span id="product-modal-variation-value-3"></span>
+            </div>
+            <div class="subtotal_prd">
+              <b><span>Subtotal:</span></b>
+              <b>S/ <span id="product-subtotal-modal"></span></b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="seguir sm-col-28">Seguir comprando</button>
+        <a href="/process/shopcart" class="sm-col-28"
+          ><button type="button" id="product-purcharse-modal" name="[[PRODUCT_SKU]]" class="pagar sm-col-28">Ir a pagar</button></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- plugin: slickslider -->
+<script src="[[URL_CDN_STORAGE]]/plugins/slickslider/slick.min.js"></script>
+<script src="[[URL_CDN_STORAGE]]/js/selfrom.js?v=[[VERSION_URL]]"></script>

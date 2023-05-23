@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="[[URL_CDN_STORAGE]]/css/pago.css?v=[[VERSION_URL]]" />
+<!-- <input type="hidden" id="doc" value="Boleta"> -->
+<main class="carro-movil">
+  <section>
+    <div class="carrito-logo sm-col-60 sm-contenedor-interno">
+      <a href="/process/checkout"><img src="[[URL_CDN_STORAGE]]/images/iconos/flecha-regreso.svg" alt="regreso" /></a>
+      <a href="/" class="logo-principal sm-col-12">
+        <div class="skeleton skeleton-logo logo"></div>
+      </a>
+      <div class="titulos sm-col-36">
+        <div class="skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-header">
+    <p class="sm-contenedor-interno titulo">Finalizar con la compra</p>
+  </section>
+  <section class="d-none">
+    <p class="check-titulo">¿Qué tipo de recibo quiero recibir?</p>
+    <div class="sm-contenedor-interno">
+      <div class="sm-col-30">
+        <input type="radio" name="doc" id="doc1" value="Boleta" />
+        <label for="doc1">Boleta</label>
+      </div>
+      <div class="sm-col-30">
+        <input type="radio" name="doc" id="doc2" value="Factura" />
+        <label for="doc2">Factura</label>
+      </div>
+    </div>
+    <article class="d-none">
+      <form class="documento sm-contenedor-interno">
+        <label for="nombre">
+          <p>Nombres y Apellidos Completos<span>*</span></p>
+          <input type="text" id="nombre" class="sm-col-60" oninput="text(this)" placeholder="Ingresa tu nombre" minlength="4" required />
+        </label>
+        <label for="numero">
+          <p>Documento<span>*</span></p>
+          <div class="sm-contenedor-interno">
+            <select name="num" id="num" class="sm-col-15">
+              <option value="dni">DNI</option>
+            </select>
+            <input type="text" id="numero" class="sm-col-45" maxlength="8" oninput="numer(this)" placeholder="N° de documento" />
+          </div>
+        </label>
+        <label for="ruc">
+          <p>RUC<span>*</span></p>
+          <input type="text" id="ruc" maxlength="11" oninput="numer(this)" class="sm-col-60" placeholder="N° de RUC" />
+        </label>
+        <label for="telefono">
+          <p>Teléfono<span>*</span></p>
+          <input
+            type="text"
+            id="telefono"
+            class="sm-col-60"
+            maxlength="9"
+            oninput="numer(this)"
+            placeholder="Ingresa tu número de teléfono"
+            required
+          />
+        </label>
+        <label for="correo">
+          <p>Correo<span>*</span></p>
+          <input type="email" name="correo" id="correo" class="sm-col-60" oninput="email(this)" placeholder="Ingresa tu correo" required />
+        </label>
+        <button type="submit" class="sm-col-60 fact">Listo</button>
+      </form>
+      <div class="mensaje d-none">Guardado Correctamente</div>
+    </article>
+  </section>
+  <section>
+    <p class="check-titulo">¿Cómo quiero pagar mi producto?</p>
+    <div class="placeholder">
+      <div class="ske">
+        <div class="skeleton-group">
+          <div class="skeleton skeleton-logo sm-col-10"></div>
+          <div class="skeleton skeleton-parrafo sm-col-40"></div>
+        </div>
+        <div class="skeleton-group">
+          <div class="skeleton skeleton-logo sm-col-10"></div>
+          <div class="skeleton skeleton-parrafo sm-col-40"></div>
+        </div>
+      </div>
+      <div class="d-none">
+        <div id="mod_pagos">
+        </div>
+      </div>
+    </div>
+    <article class="botones">
+      <div class="dlist-align sm-col-20" id="total_total">
+        <div class="skeleton-parrafo skeleton"></div>
+      </div>
+      <button id="continuarPago" type="button">Continuar compra</button>
+    </article>
+  </section>
+</main>
+<script src="https://checkout.culqi.com/js/v4"></script>
+<script src="https://3ds.culqi.com"></script>
+<script src="[[URL_CDN_STORAGE]]/js/pago.js?v=[[VERSION_URL]]"></script>

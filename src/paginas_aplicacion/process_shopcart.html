@@ -1,0 +1,82 @@
+<link
+  rel="stylesheet"
+  href="[[URL_CDN_STORAGE]]/css/shopcart.css?v=[[VERSION_URL]]"
+/>
+<main class="carro-movil">
+  <section>
+    <div class="carrito-logo sm-col-60 sm-contenedor-interno">
+      <a href="/"><img src="[[URL_CDN_STORAGE]]/images/iconos/flecha-regreso.svg" alt="regreso" width="auto"  height="auto"/></a>
+      <a href="/" class="logo-principal sm-col-12">
+        <div class="skeleton skeleton-logo logo"></div>
+      </a>
+      <div class="titulos sm-col-36">
+        <div class="skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-header">
+    <p class="sm-contenedor-interno titulo">
+      Tu carrito
+    </p>
+  </section>
+
+  <section class="resumen">
+    <div class="sm-contenedor-interno">
+      <section class="sm-col-60">
+        <table class="table-shopping-cart">
+          <thead class="text-muted">
+            <tr class="small text-uppercase">
+              <th scope="col" width="430">Producto</th>
+              <th scope="col" width="120">Cantidad</th>
+              <th scope="col" width="120">Precio</th>
+              <th scope="col" width="120">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody id="products_items"></tbody>
+        </table>
+      </section>
+      <aside class="sm-col-60">
+        <div class="card-body">
+          <div class="precios">
+            <dl class="dlist-align">
+              <dt>Precio total:</dt>
+              <dd class="text-right">S/. <span id="total_price"></span></dd>
+            </dl>
+            <dl class="dlist-align">
+              <dt>Descuento:</dt>
+              <dd class="text-right text-danger">
+                - S/. <span id="total_discount"></span>
+              </dd>
+            </dl>
+            <hr />
+            <dl class="dlist-align total">
+              <dt>Total:</dt>
+              <dd class="text-right text-dark b">
+                <strong>S/. <span class="total_total"></span></strong>
+              </dd>
+            </dl>
+          </div>
+          <div class="botones-pagar">
+            <a
+              href="/process/login"
+              class="btn btn-primary btn-block"
+              id="to_buy"
+            >
+              IR A PAGAR
+            </a>
+            <dl class="dlist-align total">
+              <dt>Total</dt>
+              <dd class="text-right text-dark b">
+                <strong>S/. <span class="total_total"></span></strong>
+              </dd>
+            </dl>
+            <a href="/process/checkout" id="keep_buy">Ir a pagar</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<div class="modal-backdrop fade show"></div>
+<script src="[[URL_CDN_STORAGE]]/js/shopcart.js?v=[[VERSION_URL]]"></script>

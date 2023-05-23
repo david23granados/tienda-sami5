@@ -1,0 +1,98 @@
+{
+  "merchant_id": 2,
+  "direccion_envios": [
+    {
+      "nombre_field": "Nombres",
+      "type": "text",
+      "name": "nombre",
+      "id": "nombre",
+      "placeholder": "Ingresa tu nombre",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Apellido",
+      "type": "text",
+      "name": "apellido",
+      "id": "apellido",
+      "placeholder": "Ingresa tu apellido",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Teléfono",
+      "type": "number",
+      "name": "telefono",
+      "id": "telefono",
+      "placeholder": "Ingresa tu número de contacto",
+      "msg_reglas": "Ingrese los datos completos min/max 9",
+      "requerido": true,
+      "estado": true,
+      "min": 9,
+      "max": 9
+    },
+    {
+      "nombre_field": "N° Documento",
+      "type": "number",
+      "name": "documento",
+      "min": 8,
+      "max": 8,
+      "msg_reglas": "Ingrese los datos completos min/max 8",
+      "id": "documento",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Departamento",
+      "type": "select",
+      "name": "departamento",
+      "id": "departamento",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Provincia",
+      "type": "select",
+      "name": "provincia",
+      "id": "provincia",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Distrito",
+      "type": "select",
+      "name": "distrito",
+      "id": "distrito",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Dirección",
+      "type": "text",
+      "name": "direccion",
+      "id": "direccion",
+      "placeholder": "Ingresa tu dirección",
+      "requerido": true,
+      "estado": true
+    },
+    {
+      "nombre_field": "Referencia",
+      "type": "text",
+      "name": "referencia",
+      "id": "referencia",
+      "placeholder":"Ingresa tu referencia",
+      "requerido": false,
+      "estado": true
+    },
+    {
+      "nombre_field": "Correo",
+      "type": "email",
+      "name": "correo",
+      "id": "correo",
+      "placeholder":"Ingresa tu correo",
+      "msg_reglas": "Ingrese un correo valido.",
+      "requerido": true,
+      "estado": true
+    }
+  ]
+}

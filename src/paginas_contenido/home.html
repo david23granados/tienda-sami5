@@ -1,0 +1,178 @@
+<link rel="stylesheet" href="[[URL_CDN_STORAGE]]/css/catalogo.css?v=[[VERSION_URL]]" />
+<section class="section-content contenido_catalogo">
+  <main id="main">
+    <div class="sm-contenedor-interno">
+      <span class="sm-col-60 border-bottom" id="vista_productos">
+        <div class="skeleton"></div>
+      </span>
+
+      <div class="sm-col-60 border-bottom ordenar">
+        <span> <b>Ordenar por:</b></span>
+        <select class="list_ordenar">
+          <option value="NEW">Lo nuevo</option>
+          <option value="REL">Relevancia</option>
+          <option value="MAX">De mayor a menor precio</option>
+          <option value="MIN">De menor a mayor precio</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="sm-contenedor-interno" id="contenedor_catalogo">
+      <div class="placeholder sm-col-60 sm-contenedor-interno">
+        <div class="sm-col-30">
+          <div class="skeleton skeleton-img-card"></div>
+          <div class="skeleton skeleton-text-card"></div>
+          <div class="skeleton skeleton-price-card"></div>
+        </div>
+        <div class="sm-col-30">
+          <div class="skeleton skeleton-img-card"></div>
+          <div class="skeleton skeleton-text-card"></div>
+          <div class="skeleton skeleton-price-card"></div>
+        </div>
+        <div class="sm-col-30">
+          <div class="skeleton skeleton-img-card"></div>
+          <div class="skeleton skeleton-text-card"></div>
+          <div class="skeleton skeleton-price-card"></div>
+        </div>
+        <div class="sm-col-30">
+          <div class="skeleton skeleton-img-card"></div>
+          <div class="skeleton skeleton-text-card"></div>
+          <div class="skeleton skeleton-price-card"></div>
+        </div>
+        <div class="sm-col-30">
+          <div class="skeleton skeleton-img-card"></div>
+          <div class="skeleton skeleton-text-card"></div>
+          <div class="skeleton skeleton-price-card"></div>
+        </div>
+        <div class="sm-col-30">
+          <div class="skeleton skeleton-img-card"></div>
+          <div class="skeleton skeleton-text-card"></div>
+          <div class="skeleton skeleton-price-card"></div>
+        </div>
+      </div>
+      <div class="conten-card d-none sm-contenedor-interno sm-col-60"></div>
+    </div>
+
+    <nav class="pagination_box" aria-label="Page navigation sample">
+      <div id="paginacion-cat" class="simple-pagination">
+        <ul></ul>
+      </div>
+    </nav>
+  </main>
+  <div class="nosotros"><h2></h2><p></p></div>
+  <!-- <div class="modal fade" id="detalleProducto1">
+    <div class="modal-dialog modal_box modal-md">
+      <div class="modal-content">
+        <div class="modal-header header-style">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="sm-contenedor-interno contenido_prd">
+            <div class="sm-col-40 img_box">
+              <div class="img_prdh_pe"></div>
+            </div>
+            <div class="col-md-30 img_prdh"></div>
+            <div class="col-md-20 data_prdh"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="detalleProducto">
+    <div class="modal-dialog modal_box2 modal-md">
+      <div class="modal-content">
+        <div
+          class=""
+          style="
+            background-color: white;
+            color: black;
+            padding: 10px 0px;
+            border-bottom: 1px solid #e4e4e4;
+            border-top-right-radius: 7px;
+            border-top-left-radius: 7px;
+            border-radius: top 7px;
+          "
+        >
+          <div class="sm-contenedor-interno">
+            <div class="sm-col-15"></div>
+            <div class="sm-col-35" style="text-align: center">
+              <h5 class="modal-title">HA SIDO AGREGADO A TU CARRO</h5>
+            </div>
+            <div class="sm-col-40" style="padding-right: 20px; padding-top: 3px">
+              <button type="button" class="close" data-dismiss="modal" style="opacity: 1; color: #747474">×</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div class="sm-contenedor-interno">
+            <div class="sm-col-20">
+              <img src="" id="product-image-modal" class="img_full" />
+            </div>
+            <div class="col-md-8">
+              <strong id="spnSummItemDet" id="product-title-modal"></strong>
+              <p>
+                <span id="nombre_producto"></span>
+              </p>
+              <div id="sku_prd">
+                <span><b>SKU:</b></span>
+                <i id="product-sku-modal"></i>
+              </div>
+              <div class="cantidad">
+                <span><b>Cantidad:</b></span>
+                <span id="product-quantity-modal"></span>
+              </div>
+              <div class="sm-contenedor-interno sm-col-60">
+                <span id="product-modal-variation-title-1"></span>
+                <span id="product-modal-variation-value-1"></span>
+              </div>
+              <div class="sm-contenedor-interno sm-col-60">
+                <span id="product-modal-variation-title-2"></span>
+                <span id="product-modal-variation-value-2"></span>
+              </div>
+              <div class="sm-contenedor-interno sm-col-60">
+                <span id="product-modal-variation-title-3"></span>
+                <span id="product-modal-variation-value-3"></span>
+              </div>
+
+              <div class="subtotal">
+                <b><span>Subtotal:</span></b>
+                <b>S/ <span id="product-subtotal-modal"></span></b>
+              </div>
+            </div>
+
+            <div class="modal-footer sm-col-60">
+              <div class="sm-col-60 sm-contenedor-interno">
+                <div class="sm-col-15"></div>
+                <div class="sm-col-20">
+                  <button type="button" class="btn-secondary btn_seguirComprando" data-dismiss="modal">Seguir comprando</button>
+                </div>
+
+                <div class="sm-col-15">
+                  <button type="button" class="btn-dark btn_irPagar" id="product-purcharse-modal" name="[[PRODUCT_SKU]]">
+                    Ir a pagar <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary btn_seguirComprando" data-dismiss="modal">Seguir comprando</button>
+          <a href="/process/shopcart">
+            <button type="button" class="btn-dark btn_irPagar" id="product-purcharse-modal" name="[[PRODUCT_SKU]]">
+              Ir a pagar <i class="fas fa-chevron-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</section>
+<section class="section-pagetop"></section>
+<script src="[[URL_CDN_STORAGE]]/js/catalogo.min.js"></script>
+ 

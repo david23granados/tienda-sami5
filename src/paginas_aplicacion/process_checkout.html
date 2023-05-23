@@ -1,0 +1,100 @@
+<link href="[[URL_CDN_STORAGE]]/css/select2.min.css" rel="stylesheet" />
+<link href="[[URL_CDN_STORAGE]]/css/checkout.css?v=[[VERSION_URL]]" rel="stylesheet"/>
+<input type="hidden" id="num_orden" />
+<div class="loadin">
+  <div class="spinner"></div>
+</div>
+<div class="carro-movil">
+  <section>
+    <div class="carrito-logo sm-col-60 sm-contenedor-interno">
+      <a href="/process/shopcart"><img src="[[URL_CDN_STORAGE]]/images/iconos/flecha-regreso.svg" alt="regreso" /></a>
+      <a href="/" class="logo-principal sm-col-12">
+        <div class="skeleton skeleton-logo logo"></div>
+      </a>
+      <div class="titulos sm-col-36">
+        <div class="skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-header">
+    <p class="sm-contenedor-interno titulo">Checkout</p>
+  </section>
+  <section id="opciones-recogo">
+    <p class="check-titulo">¿Cómo quiero recibir mi producto?</p>
+    <div class="placeholder">
+      <div class="ske">
+        <div class="skeleton-group">
+          <div class="skeleton skeleton-logo sm-col-10"></div>
+          <div class="skeleton skeleton-parrafo sm-col-40"></div>
+        </div>
+        <div class="skeleton-group">
+          <div class="skeleton skeleton-logo sm-col-10"></div>
+          <div class="skeleton skeleton-parrafo sm-col-40"></div>
+        </div>
+      </div>
+      <div class="d-none">
+        <div id="mod_pagos">
+        </div>
+        <article class="envio-domicilio">
+          <label for="domicilio-envio">
+            <input type="radio" name="opciones" id="domicilio-envio" />
+            <div class="sm-contenedor-interno">
+              <img src="[[URL_CDN_STORAGE]]/images/iconos/domicilio.svg" alt="" />
+              <p>
+                Envio a domicilio.
+              </p>
+            </div>
+          </label>
+          <div class="formulario-envio sm-col-60">
+            <form id="smart-form">
+              <section class="section-content">
+                <div class="container">
+                  <div class="row">
+                    <main class="col-md-12 col-lg-8">
+    
+                      <article class="card mb-4" id="enviosForm">
+                        <div class="card-body">
+                          <div class="row">
+                            <div id="formulario">
+                            </div>
+                          </div>
+                          <div class="row zonasEnvio2" style="display: none;"></div>
+                        </div>
+                      </article>
+    
+                      <div class="metodosPago" style="display: none">
+                        <div id="agregar_metodos_pago"></div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+              </section>
+            </form>
+          </div>
+        </article>
+      </div>
+    </div>    
+    <article class="resumen">
+      <aside>
+        <p class="res-p">Resumen de tu pedido</p>
+        <div class="box listaCarrito"></div>
+        <div class="listaPagos sm-col-60"></div>
+      </aside>
+      <label for="observaciones">
+        <p>Observaciones</p>
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10" class="sm-col-60" oninput="text(this,3)"></textarea>
+      </label>
+    </article>
+    <article class="botones">
+      <div class="dlist-align">
+        <small>PRECIO TOTAL: </small>
+        <p class="totalCarrito">S/ <span id="total_total"></span></p>
+      </div>
+      <button id="continuarPago" type="button">Continuar compra</button>
+    </article>
+  </section>
+</div>
+<script src="[[URL_CDN_STORAGE]]/js/select2.min.js"></script>
+<script type="text/javascript" src="[[URL_CDN_STORAGE]]/js/jquery.validate.min.js"></script>
+<script src="[[URL_CDN_STORAGE]]/js/checkout.js?v=[[VERSION_URL]]" type="text/javascript" ></script>

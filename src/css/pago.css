@@ -1,0 +1,193 @@
+label {
+    width: 100%;
+    margin-bottom: 4px;
+}
+main article{
+    border: 1px solid #D9D9D9;
+    padding: 25px 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 25px;
+}
+main article > label{
+    display: flex;
+}
+main article label input[type=radio]{
+    position: absolute;
+    top: 10px;
+}
+.carro-movil {
+    z-index: 1041;
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    top: 0;
+    padding: 20px 30px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+  }
+  .carrito-logo {
+     padding: 15px 10px;
+     border-bottom: 1px solid #e4e4e4;
+     gap: 10px;
+     font-weight: 600;
+     font-size: 20px;
+  }
+  .titulo {
+     font-size: 17px;
+     text-align: center;
+     display: block;
+     width: 100%;
+   }
+  .check-titulo{
+     color: #A9B546;
+     text-align: center;
+     font-size: 20px;
+     padding: 20px 0;
+     font-weight: 600;
+  }
+  .tipo-pago {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+  .tipo-pago label {
+    position: relative;
+    display: block;
+    height: 95px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+}
+main article > label div {
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    gap: 10px;
+    margin-left: 18px;
+}
+.tipo-pago div {
+    align-items: center;
+    justify-content: center;
+}
+.tipo-pago div p {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+input[name=tipo-pago] {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #A9B546;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 1px;
+}
+[name=tipo-pago]:checked {
+    background: #A9B546;
+}
+.tipo-pago {
+    display: none;
+}
+.activo .tipo-pago {
+    display: flex;
+}
+.botones {
+    position: fixed;
+    bottom: 23px;
+    left: 0;
+    right: 0;
+    border: 0.5px solid #EBEBEB;
+    box-shadow: 0px -2px 15px rgb(0 0 0 / 24%);
+    border-radius: 20px 20px 0px 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.dlist-align {
+    font-weight: 600;
+    font-size: 13px;
+}
+p.totalCarrito {
+    font-size: 25px;
+}
+#continuarPago {
+    padding: 15px 30px;
+    background-color: #495057;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+#continuarPago.activo {
+    background-color: #a9b546;
+}
+input[name=doc] {
+    position: absolute;
+    bottom: 26px;
+    left: 38px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+}
+input[name=doc]:checked{
+    background: white;
+    border: 3px double #8f8f8f;
+}
+input[name=doc]:checked + label {
+    background-color: #495057;
+    color: white;
+    border-radius: 7px;
+}
+label[for*=doc] {
+    display: flex;
+    justify-content: center;
+    padding: 9px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 7px;
+}
+.documento label p{
+    margin-bottom: 8px;
+}
+.documento label p span{
+    color: #F46A6A;
+}
+.documento input, .documento select{
+    height: 35px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    outline: none;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.fact {
+    padding: 10px;
+    background-color: #A9B546;
+    border: 1px solid #A9B546;
+    border-radius: 7px;
+    color: white;
+}
+.mensaje {
+    padding: 10px 0;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #e1e1e1;
+    border-radius: 7px;
+}
+#mod_pagos article:last-child {
+    margin-bottom: 150px;
+}
+a.link_what {
+    z-index: 10000;
+    bottom: 175px;
+}

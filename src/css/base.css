@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+  color: #495057;
+}
+
+body {
+  font-family: Arial;
+  margin: 0px;
+  padding: 0px;
+}
+
+[class*="sm-col-"] {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  padding: 0 10px 10px;
+}
+
+.sm-col-1 {
+  width: 1.66667%;
+}
+.sm-col-2 {
+  width: 3.33333%;
+}
+.sm-col-3 {
+  width: 5%;
+}
+.sm-col-4 {
+  width: 6.66667%;
+}
+.sm-col-5 {
+  width: 8.33333%;
+}
+.sm-col-6 {
+  width: 10%;
+}
+.sm-col-7 {
+  width: 11.66667%;
+}
+.sm-col-8 {
+  width: 13.33333%;
+}
+.sm-col-9 {
+  width: 15%;
+}
+.sm-col-10 {
+  width: 16.66667%;
+}
+.sm-col-11 {
+  width: 18.33333%;
+}
+.sm-col-12 {
+  width: 20%;
+}
+.sm-col-13 {
+  width: 21.66667%;
+}
+.sm-col-14 {
+  width: 23.33333%;
+}
+.sm-col-15 {
+  width: 25%;
+}
+.sm-col-16 {
+  width: 26.66667%;
+}
+.sm-col-17 {
+  width: 28.33333%;
+}
+.sm-col-18 {
+  width: 30%;
+}
+.sm-col-19 {
+  width: 31.66667%;
+}
+.sm-col-20 {
+  width: 33.33333%;
+}
+.sm-col-21 {
+  width: 35%;
+}
+.sm-col-22 {
+  width: 36.66667%;
+}
+.sm-col-23 {
+  width: 38.33333%;
+}
+.sm-col-24 {
+  width: 40%;
+}
+.sm-col-25 {
+  width: 41.66667%;
+}
+.sm-col-26 {
+  width: 43.33333%;
+}
+.sm-col-27 {
+  width: 45%;
+}
+.sm-col-28 {
+  width: 46.66667%;
+}
+.sm-col-29 {
+  width: 48.33333%;
+}
+.sm-col-30 {
+  width: 50%;
+}
+.sm-col-31 {
+  width: 51.66667%;
+}
+.sm-col-32 {
+  width: 53.33333%;
+}
+.sm-col-33 {
+  width: 55%;
+}
+.sm-col-34 {
+  width: 56.66667%;
+}
+.sm-col-35 {
+  width: 58.33333%;
+}
+.sm-col-36 {
+  width: 60%;
+}
+.sm-col-37 {
+  width: 61.66667%;
+}
+.sm-col-38 {
+  width: 63.33333%;
+}
+.sm-col-39 {
+  width: 65%;
+}
+.sm-col-40 {
+  width: 66.66667%;
+}
+.sm-col-41 {
+  width: 68.33333%;
+}
+.sm-col-42 {
+  width: 70%;
+}
+.sm-col-43 {
+  width: 71.66667%;
+}
+.sm-col-44 {
+  width: 73.33333%;
+}
+.sm-col-45 {
+  width: 75%;
+}
+.sm-col-46 {
+  width: 76.66667%;
+}
+.sm-col-47 {
+  width: 78.33333%;
+}
+.sm-col-48 {
+  width: 80%;
+}
+.sm-col-49 {
+  width: 81.66667%;
+}
+.sm-col-50 {
+  width: 83.33333%;
+}
+.sm-col-51 {
+  width: 85%;
+}
+.sm-col-52 {
+  width: 86.66667%;
+}
+.sm-col-53 {
+  width: 88.33333%;
+}
+.sm-col-54 {
+  width: 90%;
+}
+.sm-col-55 {
+  width: 91.66667%;
+}
+.sm-col-56 {
+  width: 93.33333%;
+}
+.sm-col-57 {
+  width: 95%;
+}
+.sm-col-58 {
+  width: 96.66667%;
+}
+.sm-col-59 {
+  width: 98.33333%;
+}
+.sm-col-60 {
+  width: 100%;
+}
+
+.sm-responsive-img {
+  width: 100%;
+}
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+  appearance: button;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+.sm-contenedor-interno {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.sm-btn-defecto {
+  border-radius: 8px;
+  background-color: #cccccc;
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+}
+
+.sm-btn-compartir-social {
+  background-color: #757fef;
+}
+
+.sm-btn-link {
+  padding: 10px;
+  max-width: 100%;
+  color: #3b3b3b;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  }
+}
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+.modal-dialog-scrollable {
+  display: flex;
+  max-height: calc(100% - 1rem);
+}
+.modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+  overflow: hidden;
+}
+.modal-dialog-scrollable .modal-header,
+.modal-dialog-scrollable .modal-footer {
+  flex-shrink: 0;
+}
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+.modal-dialog-centered::before {
+  display: block;
+  height: calc(100vh - 1rem);
+  content: "";
+}
+.modal-dialog-centered.modal-dialog-scrollable {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+  max-height: none;
+}
+.modal-dialog-centered.modal-dialog-scrollable::before {
+  content: none;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.45rem;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e4e4e4;
+  border-top-left-radius: 0.45rem;
+  border-top-right-radius: 0.45rem;
+}
+.modal-header .close {
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #e4e4e4;
+  border-bottom-right-radius: 0.45rem;
+  border-bottom-left-radius: 0.45rem;
+}
+.modal-footer > :not(:first-child) {
+  margin-left: 0.25rem;
+}
+.modal-footer > :not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+
+  .modal-dialog-scrollable {
+    max-height: calc(100% - 3.5rem);
+  }
+  .modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 3.5rem);
+  }
+
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
+  .modal-dialog-centered::before {
+    height: calc(100vh - 3.5rem);
+  }
+
+  .modal-sm {
+    max-width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px;
+  }
+}
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+article.activo, [name=tipo-pago]:checked + label {
+  border-color: #A9B546;
+}
+.logo {
+  width: 50px;
+}
+.carrito-logo p.logo.logo-p {
+  width: 50px;
+  height: 50px;
+  font-size: 26px;
+}
+
+.skeleton-group{
+  padding: 25px 10px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skeleton {
+  border-radius: 4px;
+  height: 20px;
+  background: linear-gradient(90deg, #dbd7d7 30%, rgb(189 184 184) 40%, #d1d0d0d1 80%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+.skeleton-logo{
+  height: 50px;
+}
+.skeleton-parrafo{
+  height: 35px;
+}
+.skeleton-banner {
+  height: 150px;
+}
+.skeleton-logo-principal {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 85px;
+  left: 22px;
+}
+.skeleton-titulo {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.skeleton-img-card {
+  height: 176px;
+}
+.skeleton-text-card {
+  margin: 15px 0;
+  height: 38px;
+}
+.skeleton-price-card {
+  margin: 15px 0;
+  height: 25px;
+}
+.d-none{
+  display: none;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+a.logo-principal {
+  text-decoration: none;
+  margin-left: 15%;
+}
+.nosotros {
+  text-align: center;
+  padding: 25px;
+}
+.nosotros h2{
+  margin-bottom: 15px;
+}
+a.link_what {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+}
