@@ -607,11 +607,15 @@ header .info p{
   padding-top: 25px;
 }
 .seguir, .pagar {
-  padding: 15px 24px;
+  padding: 18px 24px;
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid #e1e1e1;
   font-size: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 #nombre_producto {
   font-weight: 600;
