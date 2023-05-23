@@ -575,6 +575,9 @@ header .info p{
   outline: none;
   text-align: center;
 }
+.descripcion #descripcion_title {
+  font-weight: 600;
+}
 #product-add-cart {
   color: white;
   background-color: #A9B546;
