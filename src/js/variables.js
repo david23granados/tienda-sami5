@@ -36,7 +36,7 @@ const ESQUELETO_FOOTER = `
             </ul>
         </article>
         <article class="siguenos">
-            <h3>SÍGUENOS</h3>
+            
             <ul>
                 [[REDES]]
             </ul>

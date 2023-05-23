@@ -29,8 +29,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   } else {
     esqueleto = esqueleto.replaceAll('[[DIRECCION]]', ``)
   }
+  if (datos_editor.ss_url_instagram) {
+    redes += `<li><a href="${datos_editor.ss_url_instagram}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/instagram.svg" alt="instagram" width="31" height="31"></a></li>`
+  }
   if (datos_editor.ss_url_facebook) {
     redes += `<li><a href="${datos_editor.ss_url_facebook}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/facebook.svg" alt="facebook" width="31" height="31"></a></li>`
+  }
+  if (datos_editor.ss_url_tiktok) {
+    redes += `<li><a href="${datos_editor.ss_url_tiktok}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/tiktok.svg" alt="tiktok" width="31" height="31"></a></li>`
   }
   if (datos_editor.ss_url_youtube) {
     redes += `<li><a href="${datos_editor.ss_url_youtube}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/youtube.svg" alt="youtube" width="31" height="31"></a></li>`
@@ -38,12 +44,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (datos_editor.ss_url_twitter) {
     redes += `<li><a href="${datos_editor.ss_url_twitter}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/twitter.svg" alt="twitter" width="31" height="31"></a></li>`
   }
-  if (datos_editor.ss_url_instagram) {
-    redes += `<li><a href="${datos_editor.ss_url_instagram}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/instagram.svg" alt="instagram" width="31" height="31"></a></li>`
-  }
-  if (datos_editor.ss_url_tiktok) {
-    redes += `<li><a href="${datos_editor.ss_url_tiktok}" target="_blank" rel="noopener noreferrer"><img src="${DOMINIO_CLOUD}/images/iconos/tiktok.svg" alt="tiktok" width="31" height="31"></a></li>`
-  }
+ 
+ 
 
   esqueleto = esqueleto.replaceAll('[[REDES]]', redes)
   $('footer .info').append(esqueleto)

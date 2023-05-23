@@ -1,5 +1,6 @@
 footer, footer .link-sami a, footer .info a{
     color: white;
+    text-decoration: none;
 }
 footer ul{
     list-style: none;
@@ -22,9 +23,15 @@ footer .info .logo{
 }
 footer .info .logo h2{
     margin-bottom: 35px;
+    letter-spacing: 18px;
+    font-weight: 500;
+    font-size: 20px;
 }
 footer .info .contacto h3, footer .info .siguenos h3{
-    margin: 25px 0;
+    margin: 30px 0;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-size: 16px;
 }
 footer .info .contacto ul li{
     margin-bottom: 25px;
@@ -44,6 +51,13 @@ footer .link-sami{
     right: 0;
     z-index: 10000;
 }
+footer .link-sami a{
+ text-decoration: underline;
+ 
+}
 footer .info .contacto ul li:last-child {
-    margin: 0;
+    margin-bottom: 25px;
+}
+footer .info .siguenos{
+   margin-top: 20px;
 }
