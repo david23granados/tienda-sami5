@@ -318,6 +318,7 @@ main div {
   left: 0;
   right: 0;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .carrito-logo {
    padding: 15px 10px;
