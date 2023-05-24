@@ -225,7 +225,7 @@ body {
   height: 100%;
   flex-wrap: wrap;
 }
-.contenido_producto .sm-contenedor-interno{
+.contenido_producto .sm-contenedor-interno.botones{
     position: fixed;
     bottom: 49px;
     left: 0;
