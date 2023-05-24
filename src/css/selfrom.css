@@ -589,6 +589,7 @@ header .info p{
   outline: none;
   text-align: center;
 }
+
 .descripcion #descripcion_title {
   font-weight: 600;
 }
@@ -616,16 +617,15 @@ footer .info{
   display: none !important;
 }
 .seguir, .pagar {
-  padding: 12px 10px;
+  padding: 18px 24px;
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid #e1e1e1;
-  font-size: 15px;
+  font-size: 13px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  font-family: 'Poppins';
 }
 #nombre_producto {
   font-weight: 600;
@@ -669,6 +669,7 @@ footer .info{
 }
 .volver {
   margin-bottom: 15px;
+  margin-left: -9px;
 }
 .volver a {
   text-decoration: none;
@@ -694,4 +695,8 @@ footer .info{
 }
 .white-box{
   min-height: 150px;
+}
+
+header .info{
+  margin-top: -25px !important;
 }
