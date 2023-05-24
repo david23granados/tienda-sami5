@@ -510,6 +510,8 @@ button:focus {
   outline: none;
   flex: auto;
   color: inherit;
+  margin-top: 3px;
+  margin-left: 2px;
 }
 .tag_nuevo {
   background-color: #a9b546;

@@ -117,7 +117,7 @@ $(document).ready(function () {
         $('#vista_productos').html(`<b>Mostrando 1 - ${lgnt} de ${numero_items} Productos</b>`)
       } else {
         const mb = 12 * num_pg - 11
-        const cntx = 12 * num_pg
+        const cntx = $('#contenedor_catalogo > div').length + mb - 1
         $('#vista_productos').html(`<b>Mostrando ${mb} - ${cntx} de ${reg_tot} Productos</b>`)
       }
 
