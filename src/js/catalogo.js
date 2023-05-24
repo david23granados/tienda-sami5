@@ -82,7 +82,10 @@ $(document).ready(function () {
           let oferta = producto.precio_oferta_maxima * 100
           oferta = oferta / producto.precio_venta_maxima
           oferta = 100 - oferta
-          precios = `<del class="price-old">${MODENA_PRINCIPAL} ${producto.precio_venta_maxima}</del><span class="price_offer">${MODENA_PRINCIPAL} ${producto.precio_oferta_maxima}</span>`
+          precios = `
+          <span class="price_offer">${MODENA_PRINCIPAL} ${producto.precio_oferta_maxima}</span>
+          <del class="price-old">${MODENA_PRINCIPAL} ${producto.precio_venta_maxima}</del>
+          `
           porcentaje = `<span class="badge badge-danger">-${parseInt(oferta)}%</span>`
         }
         $('.conten-card').append(
