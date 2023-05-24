@@ -536,7 +536,7 @@ article.activo, [name=tipo-pago]:checked + label {
 }
 a.logo-principal {
   text-decoration: none;
-  margin-left: 15%;
+  margin-left: 5%;
 }
 
 .nosotros {
