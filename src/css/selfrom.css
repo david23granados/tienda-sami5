@@ -602,6 +602,13 @@ header .info p{
   height: 42px;
   border-radius: 10px;
   cursor: pointer;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: center;
+
 }
 .info-frame{
   padding-top: 25px;
