@@ -67,7 +67,7 @@ var settings = {
 
 // FILTROS
 $(document).ready(function () {
-  $.ajax("https://api-inventario.samishop.pe/datoscatalogo/qasdavid10.s1a2m3i4.com/categoria/?limit=12&rlv=true")
+  $.ajax(settings)
     .done(function (response) {
       let numero_items = response['obj'][0]['total_de_registros']
       let Productos = response['obj'][0]['datos_catalogos']
