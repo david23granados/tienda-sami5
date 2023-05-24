@@ -185,6 +185,7 @@ em.state-error {
   border-radius: 10px;
   font-size: 16px;
   border: none;
+  padding: 15px 60px;
 }
 /*.terms_condc{display: none;}*/
 .dsct {
@@ -452,5 +453,5 @@ label[for=observaciones] p {
 }
 a.link_what {
   z-index: 10000;
-  bottom: 175px;
+  bottom: 150px;
 }
