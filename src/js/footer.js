@@ -10,14 +10,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (datos_editor.ss_telefono_footer) {
     esqueleto = esqueleto
       .replaceAll('[[TELEFONO]]', `<li><a href="tel:+${datos_editor.ss_telefono_footer}">${datos_editor.ss_telefono_footer}</a></li>`)
-      .replaceAll(
-        '[[whatsapp]]',
-        `<a href="https://api.whatsapp.com/send?phone=${datos_editor.ss_telefono_footer}&text=${encodeURIComponent(
-          `Hola, vengo de la tienda ${DOMINIO} y tengo una consulta!`
-        )}" target="_blank" rel="noopener noreferrer" class="link_what"><img src="${DOMINIO_CLOUD}/images/iconos/whatsapp_1.png"></a>`
-      )
+
+    $(".whatsapp").html(`<a href="https://api.whatsapp.com/send?phone=${datos_editor.ss_telefono_footer}&text=${encodeURIComponent(
+      `Hola, vengo de la tienda ${DOMINIO} y tengo una consulta!`
+    )}" target="_blank" rel="noopener noreferrer" class="link_what"><img src="${DOMINIO_CLOUD}/images/iconos/whatsapp_1.png"></a>`)
   } else {
-    esqueleto = esqueleto.replaceAll('[[TELEFONO]]', ``).replaceAll('[[whatsapp]]', '')
+    esqueleto = esqueleto.replaceAll('[[TELEFONO]]', ``)
+    $(".whatsapp").remove()
   }
   if (datos_editor.ss_correo_footer) {
     esqueleto = esqueleto.replaceAll('[[EMAIL]]', `<li><a href="mailto:${datos_editor.ss_correo_footer}">${datos_editor.ss_correo_footer}</a></li>`)
