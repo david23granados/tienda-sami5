@@ -41,7 +41,6 @@ const ESQUELETO_FOOTER = `
                 [[REDES]]
             </ul>
         </article>
-        [[whatsapp]]
 `
 let anchoPantalla = $(window).width();
 let datos_editor
