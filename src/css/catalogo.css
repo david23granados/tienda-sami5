@@ -37,7 +37,7 @@
 
 #contenedor_catalogo .card {
   background: transparent;
-  border: none;
+
 }
 
 .card-product-grid .img-wrap {
@@ -52,8 +52,8 @@
 }
 
 .card-product-grid {
-  border: 1px solid #fafafa;
-  /* box-shadow: 5px 5px 10px #f2f2f2; */
+  border: 1px solid #f1f1f1;
+
   min-height: unset;
   height: auto;
 }
@@ -516,13 +516,13 @@ button:focus {
   color: white;
 }
 .fix-height {
-  height: 85px;
+  height: 60px;
   text-align: center;
   position: relative;
 }
 .titles {
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -532,13 +532,11 @@ button:focus {
   text-decoration: none;
 }
 .titles + div {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+ 
   display: flex;
   justify-content: center;
   font-size: 14px;
+  flex-direction: column;
 }
 .img-wrap .badge {
   position: absolute;

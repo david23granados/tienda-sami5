@@ -62,3 +62,8 @@ footer .info .contacto ul li:last-child {
 footer .info .siguenos{
    margin-top: 20px;
 }
+
+.nosotros p {
+    font-size: 13px;
+    text-align: justify;
+}
