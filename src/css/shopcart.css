@@ -75,6 +75,7 @@
   box-shadow: 0px -2px 15px rgb(0 0 0 / 23%);
   background: white;
   margin: 0 -41px;
+  align-items: end;
 }
 .botones-pagar.activo {
   position: fixed;
@@ -90,7 +91,7 @@
     cursor: pointer;
     background: #A9B546;
     color: white;
-    padding: 15px 30px;
+    padding: 7px 40px 10px;
     font-size: 16px;
     border-radius: 10px;
     border: 1px solid #A9B546;

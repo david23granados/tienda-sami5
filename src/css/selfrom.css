@@ -625,6 +625,7 @@ footer .info{
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  font-family: 'Poppins';
 }
 #nombre_producto {
   font-weight: 600;
