@@ -47,7 +47,7 @@
     display: none;
 }
 .titulo {
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;
   display: block;
   width: 100%;
@@ -61,7 +61,7 @@
     flex-wrap: nowrap;
 }
 .carrito-logo .titulos{
-  font-size: 18px;
+  font-size: 20px;
 }
 .resumen {
     padding-top: 15px;
