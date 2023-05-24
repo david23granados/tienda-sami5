@@ -37,7 +37,7 @@
 
 #contenedor_catalogo .card {
   background: transparent;
-  border: none;
+
 }
 
 .card-product-grid .img-wrap {
@@ -52,8 +52,8 @@
 }
 
 .card-product-grid {
-  border: 1px solid #fafafa;
- box-shadow: 5px 5px 10px #f2f2f2; 
+  border: 1px solid #f1f1f1;
+
   min-height: unset;
   height: auto;
 }
